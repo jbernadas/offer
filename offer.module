@@ -1,0 +1,37 @@
+<?php
+
+// Adds text-editor area to message text-area
+use Drupal\Core\Form\FormStateInterface;
+
+function offer_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  if(isset($form['message'])) {
+    // Fetch the entity object.
+    $entity = $form_state->getFormObject()->getEntity();
+    // Get the current value stored for the field.
+    $value = $entity->message->getString();
+    // Change the base type for this field to a textarea.
+    $form['message']['widget']['0']['#base_type'] = 'textarea';
+    // Change the type of field to formatted text.
+    $form['message']['widget']['0']['#type'] = 'text_format';
+    // Recommended: set a default text format. When rendering
+    // you’ll have to manually set this to make the field use
+    // formatting (see next section).
+    $form['message']['widget']['0']['#format'] = 'full_html';
+    // Set the default value to the currently stored value.
+    $form['message']['widget']['0']['#default_value'] = $value;
+  }
+}
+
+function offer_field_formatter_info_alter(array &$info) {
+  // Let the string field types use the text formatter.
+  $info['text_default']['field_types'][] = 'string';
+  $info['text_default']['field_types'][] = 'string_long';
+}
+
+function offer_preprocess_field(&$variables, $hook) {
+  if ($variables['field_name'] == 'message') {
+    $variables['items']['0']['content']['#format'] = 'full_html';
+  }
+}
+
+// -end- Adds text-editor area to message text-area
