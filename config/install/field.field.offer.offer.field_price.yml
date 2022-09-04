@@ -1,0 +1,26 @@
+uuid: 5b83a912-1f47-4e4f-ba84-ff8d0812372f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.offer.field_price
+  module:
+    - offer
+_core:
+  default_config_hash: n7rBk3lNS3OXvmtYOd4DP2d3Dycv4KaTlJmsCn83MhI
+id: offer.offer.field_price
+field_name: field_price
+entity_type: offer
+bundle: offer
+label: Price
+description: 'Your minimum price (in $)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: null
+  prefix: ''
+  suffix: $
+field_type: decimal

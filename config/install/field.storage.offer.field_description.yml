@@ -1,0 +1,21 @@
+uuid: dddfb420-fd42-465f-85ff-e309f48a0bcc
+langcode: en
+status: true
+dependencies:
+  module:
+    - offer
+    - text
+_core:
+  default_config_hash: smOB_0JVUWcCNrYUSc871MC89f8NFOj5MThbG1yd3V4
+id: offer.field_description
+field_name: field_description
+entity_type: offer
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

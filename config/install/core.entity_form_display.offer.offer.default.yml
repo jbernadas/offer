@@ -1,0 +1,58 @@
+uuid: 106b1008-f51a-4852-9138-6ba2cea3972e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.offer.offer.field_description
+    - field.field.offer.offer.field_image
+    - field.field.offer.offer.field_offer_type
+    - field.field.offer.offer.field_price
+  module:
+    - media_library
+    - offer
+    - text
+_core:
+  default_config_hash: 87FCHAPhAFwa0TpU_qNOv65u60Vm0xc274GK8gDe9ac
+id: offer.offer.default
+targetEntityType: offer
+bundle: offer
+mode: default
+content:
+  field_description:
+    type: text_textarea
+    weight: 3
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_image:
+    type: media_library_widget
+    weight: 4
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_offer_type:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_price:
+    type: number
+    weight: 1
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  user_id: true

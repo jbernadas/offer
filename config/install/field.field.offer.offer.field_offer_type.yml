@@ -1,0 +1,23 @@
+uuid: 1019c133-53a1-4165-a29d-25ef684bd6f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.offer.field_offer_type
+  module:
+    - offer
+    - options
+_core:
+  default_config_hash: PqGzdnTlPsIrUidt-ML_wgGn2hvLk9DUVNT5xtvxixA
+id: offer.offer.field_offer_type
+field_name: field_offer_type
+entity_type: offer
+bundle: offer
+label: 'Offer type'
+description: 'Set the type of offer'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

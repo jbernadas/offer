@@ -1,3 +1,4 @@
+uuid: b1c2df80-530f-4d54-8ed3-2fdfe9587ebd
 langcode: en
 status: true
 dependencies:
@@ -5,7 +6,7 @@ dependencies:
     - offer
     - user
 _core:
-  default_config_hash: mX4HYyRQ-zgGagTZEdQxFS8OImqfYmDO5CPebUawRs8
+  default_config_hash: 2bZ1w8nV5yOqZprjsZ7legZVG87zTOAOI3O91qKCA-M
 id: offers
 label: offers
 module: views
