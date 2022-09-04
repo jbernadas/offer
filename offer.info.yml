@@ -12,3 +12,5 @@ dependencies:
   - drupal:file
   - drupal:field
   - drupal:image
+  - drupal:content_moderation
+  - drupal:workflows
