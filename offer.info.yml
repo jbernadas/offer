@@ -6,3 +6,9 @@ dependencies:
   - drupal:views
   - drupal:media_library
   - drupal:media
+  - drupal:filter
+  - drupal:user
+  - drupal:system
+  - drupal:file
+  - drupal:field
+  - drupal:image
