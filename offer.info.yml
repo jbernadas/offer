@@ -4,5 +4,5 @@ description: offer entity
 core_version_requirement: ^9
 dependencies:
   - drupal:views
-  - drupal:media_libray
+  - drupal:media_library
   - drupal:media
