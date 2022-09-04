@@ -49,7 +49,7 @@ use Drupal\Core\Entity\EntityStorageInterface;
  *     }
  *   },
  *   links = {
- *     "canonical" = "/offers/{offer}",
+ *     "canonical" = "/offer/{offer}",
  *     "delete-form" = "/offer/{offer}/delete",
  *     "edit-form" = "/offer/{offer}/edit",
  *     "create" = "/offer/create"
@@ -95,7 +95,7 @@ class Offer extends EditorialContentEntityBase {
       ])
       ->setDefaultValue('')
       ->setDisplayOptions('view', [
-        'label' => 'above',
+        'label' => 'hidden',
         'type' => 'string',
         'weight' => -4,
       ])
@@ -120,7 +120,7 @@ class Offer extends EditorialContentEntityBase {
 //      ->setDisplayOptions('view', [
 //        'type' => 'string',
 //        'weight' => 0,
-//        'label' => 'above',
+//        'label' => 'hidden',
 //      ])
 //      ->setDisplayConfigurable('view', TRUE);
 
