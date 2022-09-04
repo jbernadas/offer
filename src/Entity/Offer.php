@@ -53,7 +53,8 @@ use Drupal\Core\Entity\EntityStorageInterface;
  *     "delete-form" = "/offer/{offer}/delete",
  *     "edit-form" = "/offer/{offer}/edit",
  *     "create" = "/offer/create"
- *   }
+ *   },
+ *   field_ui_base_route = "entity.offer.settings"
  * )
  */
 
@@ -105,23 +106,23 @@ class Offer extends EditorialContentEntityBase {
       ->setDisplayConfigurable('form', TRUE)
       ->setDisplayConfigurable('view', TRUE);
 
-    $fields['message'] = BaseFieldDefinition::create('string_long')
-      ->setLabel(t('Message'))
-      ->setRequired(TRUE)
-      ->setDisplayOptions('form', [
-        'type' => 'string_textarea',
-        'weight' => 4,
-        'settings' => [
-          'rows' => 12,
-        ],
-      ])
-      ->setDisplayConfigurable('form', TRUE)
-      ->setDisplayOptions('view', [
-        'type' => 'string',
-        'weight' => 0,
-        'label' => 'above',
-      ])
-      ->setDisplayConfigurable('view', TRUE);
+//    $fields['message'] = BaseFieldDefinition::create('string_long')
+//      ->setLabel(t('Message'))
+//      ->setRequired(TRUE)
+//      ->setDisplayOptions('form', [
+//        'type' => 'string_textarea',
+//        'weight' => 4,
+//        'settings' => [
+//          'rows' => 12,
+//        ],
+//      ])
+//      ->setDisplayConfigurable('form', TRUE)
+//      ->setDisplayOptions('view', [
+//        'type' => 'string',
+//        'weight' => 0,
+//        'label' => 'above',
+//      ])
+//      ->setDisplayConfigurable('view', TRUE);
 
     $fields['status'] = BaseFieldDefinition::create('boolean')
       ->setLabel(t('Publishing status'))

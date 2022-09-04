@@ -1,0 +1,6 @@
+# Activate the tabs on the entity admin pages (/admin/structure/offer)
+offer.settings.tab:
+  route_name: entity.offer.settings
+  title: 'Settings'
+  base_route: entity.offer.settings
+

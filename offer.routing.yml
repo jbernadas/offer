@@ -35,3 +35,10 @@ entity.offer.collection:
   requirements:
     _permission: 'administer own offers'
 
+entity.offer.settings:
+  path: '/admin/structure/offer'
+  defaults:
+    _form: '\Drupal\offer\Form\OfferSettingsForm'
+    _title: 'Offer Settings'
+  requirements:
+    _permission: 'administer own offers'
